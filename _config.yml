@@ -1,3 +1,8 @@
-remote_theme: pages-themes/hacker@v0.2.0
-plugins:
-- jekyll-remote-theme
+title: "gen_rv64asm"
+description: "Generator for RISC-V 64-bit assembly"
+author: "VLadimir Roncevic"
+email: "elektron.ronca@gmail.com"
+url: "https://vroncevic.github.io/gen_rv64asm/"
+baseurl: ""
+markdown: kramdown
+theme: jekyll-theme-cayman
