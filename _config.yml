@@ -6,3 +6,6 @@ url: "https://vroncevic.github.io/gen_rv64asm/"
 baseurl: ""
 markdown: kramdown
 theme: jekyll-theme-cayman
+source: .
+exclude:
+  - "gen_rv64asm"
