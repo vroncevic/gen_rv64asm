@@ -9,3 +9,4 @@ theme: jekyll-theme-cayman
 source: .
 exclude:
   - "gen_rv64asm"
+  - "tests"
