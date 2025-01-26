@@ -1,5 +1,1 @@
 theme: jekyll-theme-hacker
-markdown: kramdown
-safe: true
-kramdown:
-  parse_block_html: true
