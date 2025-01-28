@@ -23,7 +23,7 @@ Info
 from __future__ import print_function
 from typing import List, Optional
 from os.path import abspath, dirname, join
-from setuptools import setup
+from setuptools import setup, find_packages
 
 __author__: str = 'Vladimir Roncevic'
 __copyright__: str = '(C) 2025, https://vroncevic.github.io/gen_rv64asm'
@@ -72,8 +72,9 @@ setup(
     keywords='Unix, Linux, Development, assembly, risc-v, generator',
     platforms='POSIX',
     classifiers=PYP_CLASSIFIERS,
-    packages=['gen_rv64asm', 'gen_rv64asm.pro'],
+    packages=find_packages(include=['gen_rv64asm', 'gen_rv64asm.pro']),
     install_requires=['ats-utilities'],
+    extras_require={'dev': ['pytest', 'mypy', 'flake8']},
     package_data={
         'gen_rv64asm': [
             'py.typed',
