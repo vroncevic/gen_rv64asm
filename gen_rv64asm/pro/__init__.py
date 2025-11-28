@@ -4,7 +4,7 @@
 Module
     __init__.py
 Copyright
-    Copyright (C) 2025 Vladimir Roncevic <elektron.ronca@gmail.com>
+    Copyright (C) 2025 - 2026 Vladimir Roncevic <elektron.ronca@gmail.com>
     gen_rv64asm is free software: you can redistribute it and/or modify it
     under the terms of the GNU General Public License as published by the
     Free Software Foundation, either version 3 of the License, or
@@ -34,15 +34,15 @@ try:
     from ats_utilities.exceptions.ats_value_error import ATSValueError
     from gen_rv64asm.pro.read_template import ReadTemplate
     from gen_rv64asm.pro.write_template import WriteTemplate
-except ImportError as ats_error_message:
-    # Force close python ATS ##################################################
-    sys.exit(f'\n{__file__}\n{ats_error_message}\n')
+except ImportError as ats_error_message:  # pragma: no cover
+    # Force exit python #######################################################
+    sys.exit(f'\n{__file__}\n{ats_error_message}\n')  # pragma: no cover
 
 __author__: str = 'Vladimir Roncevic'
-__copyright__: str = '(C) 2025, https://vroncevic.github.io/gen_rv64asm'
+__copyright__: str = '(C) 2026, https://vroncevic.github.io/gen_rv64asm'
 __credits__: List[str] = ['Vladimir Roncevic', 'Python Software Foundation']
 __license__: str = 'https://github.com/vroncevic/gen_rv64asm/blob/dev/LICENSE'
-__version__: str = '1.0.5'
+__version__: str = '1.0.6'
 __maintainer__: str = 'Vladimir Roncevic'
 __email__: str = 'elektron.ronca@gmail.com'
 __status__: str = 'Updated'
