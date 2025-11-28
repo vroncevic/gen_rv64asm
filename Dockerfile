@@ -1,4 +1,4 @@
-# Copyright 2025 Vladimir Roncevic <elektron.ronca@gmail.com>
+# Copyright 2025 - 2026 Vladimir Roncevic <elektron.ronca@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -51,7 +51,6 @@ RUN mkdir /gen_rv64asm/
 RUN mkdir /tests/
 COPY gen_rv64asm /gen_rv64asm/
 COPY setup.py /
-COPY setup.cfg /
 COPY pyproject.toml /
 COPY MANIFEST.in /
 COPY README.md /
@@ -64,7 +63,6 @@ RUN python3 -m build --no-isolation --wheel
 RUN pip3 install /dist/gen_rv64asm-*-py3-none-any.whl
 RUN rm -rf /gen_rv64asm/
 RUN rm -rf dist/ tests/
-RUN rm -f setup.cfg
 RUN rm -f pyproject.toml
 RUN rm -f MANIFEST.in
 RUN rm -f setup.py
